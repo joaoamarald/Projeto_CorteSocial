@@ -102,3 +102,60 @@ color: white;
 .main-img img {
     width: 100%;
 }
+
+/* menu icon */
+.menu-icon {
+    display: none;
+    position: relative;
+    z-index: 10;
+}
+
+
+/* Responsividade */
+@media (max-width: 960px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .ul {
+        position: fixed;
+        background: #14424b;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        left: 100%;
+        transition: 0.3s;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .ul li{
+        font-size: 20px;
+        margin: 20px 0;
+    }
+
+    .ul.ativo {
+        left: 0;
+    }
+
+    main .container {
+        flex-direction: column;
+    }
+
+    main .container .main-img,
+    main .container .texto {
+        width: 100%;
+        text-align: center;
+    }
+
+    main .container .texto h1 {
+        font-size: 4rem;
+    }
+
+    main .container .texto div {
+        justify-content: center;
+    }
+    
+
+}
+
